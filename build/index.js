@@ -46,7 +46,7 @@ exports.client.on(discord_js_1.default.Events.VoiceStateUpdate, (update) => __aw
     let vc = yield exports.client.channels.fetch("1029265216153858053");
     if (onCall.size < vc.members.size) {
         onCall = vc.members;
-        let people = [yield exports.client.users.fetch("700443591423819889"), yield exports.client.users.fetch("700443591423819889")];
+        let people = [yield exports.client.users.fetch("700443591423819889"), yield exports.client.users.fetch("808864687704899605")];
         people.forEach((person) => __awaiter(void 0, void 0, void 0, function* () {
             (yield person.createDM()).send("Somebody has joined the vc");
         }));
